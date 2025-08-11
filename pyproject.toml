@@ -1,0 +1,28 @@
+[project]
+name = "comparopt"
+version = "0.1.0"
+description = "A Python toolkit for the reproducible analysis and comparison of optimizers for artificial neural networks."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Bruno Samuel Ardenghi Gonçalves", email = "bruno.samuel@ufrgs.br" },
+    { name = "Bruno Iochins Grisci", email = "bigrisci@inf.ufrgs.br" },
+]
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+]
+dependencies = [
+    "matplotlib>=3.9.4",
+    "pandas>=2.3.1",
+    "pyyaml>=6.0.2",
+    "scikit-learn>=1.6.1",
+    "seaborn>=0.13.2",
+    "torch>=2.8.0",
+]
+
+[project.optional-dependencies]
+dev = ["mypy>=1.17.1", "pytest>=8.4.1", "ruff>=0.12.8"]
